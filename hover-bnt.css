@@ -1,0 +1,39 @@
+.home__title-icon .button {
+    display: flex;
+    height: 55px;
+    width: 55px;
+    float: left;
+    margin: 0 5px;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
+    transition: .3s;
+}
+
+.home__title-icon .button:hover {
+    display: flex;
+    width: 180px;
+}
+
+.home__title-icon .button .icon {
+    display: inline-block;
+    height: 55px;
+    width: 55px;
+    border-radius: 50px;
+    box-sizing: border-box;
+    margin-left: 10px;
+    line-height: 79px;
+}
+
+.home__title-icon .button .icon img {
+    line-height: 60px;
+}
+
+.home__title-icon .button span {
+    font-size: 20px;
+    line-height: 60px;
+    font-weight: 500;
+    margin-left: 10px;
+}

@@ -1,0 +1,130 @@
+.dark-theme-btn {
+    position: fixed;
+    right: 15px;
+    top: 25px;
+    border: none;
+    outline: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 6px;
+    transition: filter .4s, background-color .4s;
+    background-color: rgba(62, 144, 171, 0.9);
+    cursor: pointer;
+}
+
+.dark-theme-btn:hover {
+    filter: brightness(80%);
+}
+
+.dark-theme-btn:active {
+    filter: brightness(120%);
+}
+
+.dark-theme__icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    margin-left: -20px;
+    margin-top: -20px;
+    opacity: 0;
+    transition: opacity .1s;
+}
+
+.dark-theme__icon circle,
+.dark-theme__icon path {
+    fill: rgb(197, 177, 0);
+}
+
+.dark-theme__icon_moon {
+    opacity: 1;
+}
+
+body.dark-theme {
+    filter: brightness(.93);
+    background-color: black;
+    color: white;
+}
+
+body.dark-theme .dark-theme-btn {
+    background-color: rgba(255, 230, 0, 1);
+}
+
+
+body.dark-theme .dark-theme__icon_moon {
+    opacity: 0;
+}
+
+body.dark-theme .dark-theme__icon_sun {
+    opacity: 1;
+}
+
+body.dark-theme .header {
+    background-color: black;
+    box-shadow: 0 0 100px 2px rgb(27, 27, 27);
+    filter: brightness(.93);
+}
+
+body.dark-theme .header a {
+    color: white;
+}
+
+body.dark-theme .header a:hover {
+    color: #0050ff;
+}
+
+body.dark-theme .home,
+body.dark-theme .home h1,
+body.dark-theme .home p,
+body.dark-theme .home h4 {
+    background-color: rgb(9, 9, 9);
+    color: white;
+    filter: brightness(.93);
+}
+
+body.dark-theme .home__title-icon .button span {
+    color: black;
+}
+
+body.dark-theme .about {
+    filter: brightness(.93);
+}
+
+body.dark-theme .about p,
+body.dark-theme .about h2 {
+    color: white;
+    filter: brightness(.93);
+}
+
+body.dark-theme .portfolio {
+    background-color: rgb(9, 9, 9);
+}
+
+body.dark-theme .portfolio__inner {
+    background-color: rgb(9, 9, 9);
+}
+
+body.dark-theme .contact {
+    filter: brightness(.93);
+    background-color: black;
+}
+
+body.dark-theme .contact h3 {
+    color: white;
+}
+
+body.dark-theme .contact__title p {
+    color: white;
+}
+
+body.dark-theme .footer {
+    margin: 0 10px 10px;
+    border-radius: 100px;
+    background-color: #fff;
+    filter: brightness(.93);
+}
+
+body.dark-theme .footer p {
+    color: black;
+}
